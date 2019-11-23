@@ -10,6 +10,9 @@ Creado el 23 de Noviembre del 2019
 # Tabla de Contenidos
 
 1. Software Requirements
+   1. Requerimientos generales
+   1. Requerimientos del cliente
+   1. Requerimientos del repartidor
 2. Plan de Calidad
 3. Arquitectura y justificación
 4. Metodología y justificación
@@ -18,6 +21,11 @@ Creado el 23 de Noviembre del 2019
 
 
 # Software requirements
+
+Debido a la naturaleza de la aplicación, tendremos 2 tipos de usuarios; razón por la cual, nuestros requerimientos se dividirán en 3.
+Esto para poder expresar de manera correcta los requerimientos que comparten y los exclusivos de cada usuario.
+
+   ## Requerimientos generales
 
    ### Recuperación de contraseña
 
@@ -38,6 +46,52 @@ Creado el 23 de Noviembre del 2019
    Req-2: Pantalla de error
    
    Req-3: Pantalla de ingreso de correo
+
+
+   ### Iniciar sesión
+
+
+   ### Crear cuenta
+
+
+   ### Perfil del usuario
+
+
+   ### Información de contacto
+
+
+   ## Requerimientos del cliente
+
+
+   ### Pantalla principal
+
+
+   ### Categorías
+
+
+   ### Búsqueda
+
+
+   ### Comercios
+
+
+   ### Carrito
+
+
+   ### Orden
+
+
+   ### Reseña
+
+
+   ## Requerimientos del repartidor
+
+
+   ### Pantalla principal
+
+
+   ### Pedido
+
 
 
 # Plan de Calidad
