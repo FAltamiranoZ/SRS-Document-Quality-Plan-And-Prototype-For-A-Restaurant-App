@@ -19,7 +19,7 @@ Creado el 23 de Noviembre del 2019
 
 # Software requirements
 
-   1. Alta de materias
+   ### Recuperación de contraseña
 
    **Descripción y prioridad**
    - Prioridad Magikarp
@@ -32,8 +32,11 @@ Creado el 23 de Noviembre del 2019
       - En caso de que el correo sea correcto --> Se enviará un correo con una contraseña provisional de inicio de sesión, y se redirigirá a la pantalla de inicio de sesión.
 
    **Requerimientos - funcionalidades**
+   
    Req-1: Pantalla de inicio de sesión
+   
    Req-2: Pantalla de error
+   
    Req-3: Pantalla de ingreso de correo
 
 
