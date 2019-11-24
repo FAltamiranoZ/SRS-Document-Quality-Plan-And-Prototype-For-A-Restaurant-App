@@ -276,8 +276,37 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
    ### Pantalla principal
 
+**Descripción y prioridad**
+   - Prioridad Mewtwo.
+   - El usuario de tipo proveedor accede a la aplicación, y en la pantalla principal se despliega un botón que dice “Buscar pedido” que permite al proveedor entrar a la cola de pedidos; así como la opción de consultar la información de su perfil
+
+   **Secuencia de respuesta**
+   - Se hace clic en el botón del perfil de usuario --> Se redirige al usuario a la pantalla de perfil del usuario
+   - Se hace clic en el botón de buscar pedido --> Se considera al usuario como activo y se le agrega a la cola de pedidos; además, el texto del botón es reemplazado por “Salir de la cola”
+   - Se hace clic sobre el botón de salir de la cola --> Se considera al usuario como inactivo y se le quita de la cola de pedidos; además, el texto del botón es reemplazado por “Buscar pedido”
+   - Se encuentra un pedido --> Aparece un pop up que dice de dónde se recoge el pedido y dónde se debe de entregar
+      - Se presiona el botón de aceptar pedido --> Se redirige al usuario a la pantalla de pedido
+      - Se presiona el botón de rechazar pedido --> Se pasa al usuario al final de la cola de pedidos
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de Inicio. Habrá en la parte superior izquierda un ícono de usuario y en la parte central de la pantalla, el botón de pedidos; este debe de tener la capacidad de agregar y remover al usuario de la cola de pedidos.
+
+   Req-2: Pop up de pedido. En este, habrá un recuadro en el que se especificará la información básica del pedido; además, contará con 2 botones en la parte de abajo para poder rechazar y aceptar el pedido. Estos deben de tener la capacidad de mandar al usuario al final de la cola de pedidos y de aceptar el pedido y sacarlo de la cola de pedidos respectivamente
+
 
    ### Pedido
+
+**Descripción y prioridad**
+   - Prioridad Charizard.
+   - El usuario tipo proveedor ya aceptó el pedido y necesita saber los detalles de este.
+
+   **Secuencia de respuesta**
+   - Se hace clic en el botón de mapa --> Se abre de manera externa la aplicación predeterminada del teléfono para navegación por GPS y se manda la información de la ubicación actual y la destino
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de Pedido. De desplegará en pantalla toda la información relevante al pedido; es decir, el nombre y ubicación y distancia hacia lugar del que se tiene que recoger la comida y nombre ubicación y distancia hacia el lugar donde se debe de entregar la comida. Además, debajo de esta información hay un botón que dice “mapa” que le despliega al usuario la ruta a seguir calculada por la aplicación de navegación por GPS predeterminada de su teléfono.
 
 
 
@@ -288,6 +317,17 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
 
 # Metodología y justificación
+
+Se escogió espiral como metodología debido a que, como opciones se encontraban las siguientes: cascada, agile, Scram, Kanban, Scramban, rapid, dinámica, espiral y extreme.
+
+Debido a la naturaleza del producto, no se puede sacar una función en dos - cuatro semanas y esperar que esta sea algo útil para el cliente, ya que Rappi-ITAM debe de estar completamente funcional previo al lanzamiento para que este tenga éxito, razón suficiente para descartar agile, Scram, Kanban y Scramban. Por la misma razón, probar con prototipos es poco viable, ya que solo es testeable el producto completo, por lo que descarta prototype.
+
+Como no se esta desarrollando algo que siga un estándar, se descalifican de la misma manera las metodologías de rapid y cascada.
+
+Se parte de la idea de que el producto es viable y generaría valor en el área en el que se desplegaría, por lo que se descarta la metodología dinámica.
+
+Con esto, quedan las metodologías de extreme y espiral; debido a que no nos encontramos en un ambiente de desarrollo inestable, y múltiples funcionalidades se van a requerir al mismo tiempo, se terminó descartando extreme en favor de espiral. Siendo entonces que se piensa desarrollar primero las funciones de mayor envergadura para terminar con las más simples.
+
 
 
 # Código del proyecto
