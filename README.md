@@ -123,10 +123,14 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
    **Secuencia de respuesta**
    - Se hace clic sobre el botón de contacto --> Se redirigirá al usuario a la pantalla de información de contacto
+   - Se hace clic sobre el botón de órdenes y hay al menos una orden activa --> Se redirige al usuario a la pantalla de orden.
+   - Se hace clic sobre el botón de órdenes y no hay una orden activa --> Se mostrará un mensaje que diga “No tienes ordenes activas por ahora”
 
    **Requerimientos - funcionalidades**
    
-   Req-1: Pantalla de información del usuario. Desplegará la siguiente información: estatus del usuario (repartidor o cliente), saldo actual, historial de pedidos, correo vinculado a la cuenta, nombre de usuario y número de tarjeta registrado. Al final de la pantalla habrá un cuadro de texto que diga “si tiene algún problema, no dude en ponerse en contacto con nosotros” y debajo habrá un botón que diga “Contacto”.
+   Req-1: Pantalla de información del usuario. Desplegará la siguiente información: estatus del usuario (repartidor o cliente), saldo actual, historial de pedidos, correo vinculado a la cuenta, nombre de usuario y número de tarjeta registrado. Después habrá un botón que diga “Consultar mis órdenes actuales” y al final de la pantalla habrá un cuadro de texto que diga “si tiene algún problema, no dude en ponerse en contacto con nosotros” y debajo habrá un botón que diga “Contacto”.
+
+   Req-2: Mensaje de error de órdenes
 
 
    ### Información de contacto
@@ -157,7 +161,6 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
    - Se hace clic en la barra de búsqueda --> Se aplica un efecto de blur a toda la pantalla excepto a la barra de búsqueda y se activa la capacidad de escribir en la barra de búsqueda
       - Se hace clic en el botón de búsqueda (la lupa) o se confirma con enter después de haber escrito algo --> Se redirige al usuario a la pantalla de resultados, e internamente, se manda la información de lo escrito.
       - Se hace clic en el botón de búsqueda (la lupa), se confirma con enter sin haber escrito algo, se presiona el botón de atrás propio del teléfono o se hace clic en la sección borrosa --> Se quita el efecto de blur y se regresa la pantalla de inicio a la normalidad.
-
    - Se hace clic en la barra de categorías --> Se redirige al usuario a la pantalla de resultados, e internamente, se manda la información de la categoría seleccionada.
    - Se hace clic en el botón del perfil de usuario --> Se redirige al usuario a la pantalla de perfil del usuario
    - Se hace clic en alguna imagen de los comercios --> Se redirige al usuario a la pantalla de comercio correspondiente.
@@ -191,14 +194,81 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
    ### Comercios
 
+**Descripción y prioridad**
+   - Prioridad Mewtwo.
+   - El usuario de tipo cliente seleccionó el comercio que le interesa, por lo que se despliega toda la información correspondiente al negocio y los productos que ofrece.
+
+   **Secuencia de respuesta**
+   - Se hace clic en el botón de “+” cuando el contador se encuentra en 0 --> Aumenta en uno el contador del producto y activa la opción de hacer clic en el “-”.
+   - Se hace clic en el botón de “+” cuando el contador se encuentra en algo diferente a 0 --> Aumenta en uno el contador del producto.
+   - Se hace clic en el botón de “-” cuando el contador se encuentra en 1 --> Disminuye en uno el contador del producto y se bloquea la opción de hacer clic en el “-”
+   - Se hace clic en el botón de “-” cuando el contador se encuentra en algo diferente a 1 --> Disminuye en uno el contador del producto.
+   - Se hace clic en el botón de agregar al carrito cuando todos los contadores de producto están en 0 --> Se despliega un mensaje que diga “Tu carrito está vacío”.
+   - Se hace clic en el botón de agregar al carrito cuando al menos un contador está en algo diferente a 0 --> Se redirije al usuario a la pantalla de carrito.
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de comercio. Tendrá en la parte superior la información del comercio; es decir, la imagen principal, el nombre del lugar, distancia de la ubicación actual y clasificación. En la parte inferior estarán listados todos los productos de la siguiente manera: imagen, nombre del producto, de que esta hecho y precio. Y a su derecha habrá un botón de “+”, un contador y un botón de “-” que serán la manera de pedir la cantidad deseada del producto. En la parte inferior de la pantalla estará un botón que diga “Agregar al carrito”. En esta pantalla se debe de poder hacer scroll down.
+
+   Req-2: Mensaje de error de carrito.
+
 
    ### Carrito
+
+**Descripción y prioridad**
+   - Prioridad Mewtwo.
+   - El usuario de tipo cliente escogió ciertos productos y ahora desea modificar su compra o finalizarla.
+
+   **Secuencia de respuesta**
+   - Se hace clic en el botón de quiero seguir comprando --> Se guarda el estado actual del carrito y se redirige al usuario a la pantalla principal.
+   - Se hace clic en el botón de modificar mi orden --> Se despliega un pop up que permita modificar la cantidad que se tiene de cada producto.
+   - Se hace clic en el botón de completar mi orden --> Se redirige al usuario a la pantalla de Orden.
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de carrito. Estará compuesta por un listado, donde se puede ver el nombre de lo que se está pidiendo, la cantidad pedida, el costo por unidad y al final, el costo total; además, habrá debajo de esto 3 botones. A la izquierda el botón de seguir comprando, en medio el de modificar la orden y a la derecha el de completarla.
+
+   Req-2: Pop up de modificar orden. Se aplicará un efecto de blur a toda la pantalla excepto al pop-up, donde podremos ver el mismo listado que en la pantalla de carrito, pero con los botones de “+” y “-” a los lados de la cantidad pedida. En la parte de abajo tendremos 2 botones, el de cancelar cambios, que dejará la orden tal como estaba antes de ser modificada y el de confirmar cambios, que actualizará la orden.
 
 
    ### Orden
 
+**Descripción y prioridad**
+   - Prioridad Togepi.
+   - El usuario de tipo cliente ya realizó un pedido y ahora esta a la espera de que llegue el pedido, por lo que puede consultar el estatus actual de la orden para ver su progreso.
+
+   **Secuencia de respuesta**
+   - Se hace clic sobre un pedido --> Se muestra un pop up con la información básica del pedido y cuanto tiempo tardará en llegar.
+   - Llega una orden --> Se despliega un mensaje que diga “Tu orden #xxxx está aquí” y se redirige al usuario a la pantalla de reseña
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de Orden. Se desplegarán en forma de listado vertical las órdenes que se encuentren activas actualmente y se actualizará esta pantalla cada minuto para reflejar los cambios que hayan sufrido.
+
+   Req-2: Pop up de orden. Al hacer clic sobre una de las órdenes listadas, se abrirá un pop up, en el que podremos ver la información el pedido; es decir, el nombre del lugar, distancia a la ubicación actual, que se pidió, cantidad que se pidió y cuanto falta para que llegue al punto de destino.
+
+   Req-3: Mensaje de éxito de orden.
+
+
 
    ### Reseña
+
+**Descripción y prioridad**
+   - Prioridad Magikarp.
+   - El usuario de tipo cliente ya recibió su pedido y desea ayudar a la comunidad escribiendo una reseña sobre este.
+
+   **Secuencia de respuesta**
+   - Se hace clic sobre el botón de ahora no gracias --> Se redirigirá al usuario a la pantalla de inicio.
+   - Se hace clic en el botón de compartir experiencia y los campos no están rellenados de manera correcta --> Se mostrará un mensaje que especifique cuál es el error y en que parte se encuentra de la siguiente manera: “Hay un error en el campo x debido a y”
+   - Se hace clic sobre el botón compartir experiencia y los campos están rellenados de manera correcta --> Se desplegará un mensaje que diga “Gracias por tu ayuda” y se redirigirá al usuario a la pantalla de inicio.
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de Reseña. En la parte de arriba de la pantalla habrá un mensaje que dice “Ayuda a otros usuarios compartiendo tu experiencia”, debajo habrá un deslizador de 1 a 5 estrellas y debajo de este, un text box grande donde escribir que tal te pareció la comida; por último, en la parte inferior de la página habrá 2 botones, uno dirá “Ahora no, gracias” y otro “Compartir tu experiencia”
+
+   Req-2: Mensaje de error de campos.
+
+   Req-3: Mensaje de éxito de reseña.
 
 
    ## Requerimientos del repartidor
