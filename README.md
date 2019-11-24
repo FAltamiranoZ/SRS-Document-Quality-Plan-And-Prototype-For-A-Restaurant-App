@@ -1,11 +1,11 @@
-# QueremosDulces-ProyectoFinal
+# Queremos Dulces – Proyecto Final
 
-Preparado por QueremosDulces, integrantes:
+Preparado por Queremos Dulces, integrantes:
 - Jorge Enrique Gatica Fernández
 - José Francisco Altamirano Zevallos
 - Luis Gerardo Godfrey Castañeda
 
-Creado el 23 de Noviembre del 2019
+Creado el 23 de noviembre del 2019
 
 # Tabla de Contenidos
 
@@ -82,7 +82,7 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
    **Secuencia de respuesta**
    - Se hace clic en el botón de confirmar y el nombre de usuario o correo electrónico no esta registrado en la base de datos --> Se mostrará un pop up que diga: “No hay ninguna cuenta con este nombre de usuario / correo ¿deseas crear una nueva cuenta?” y tenga en la parte de debajo un botón que redirija a la pantalla de creación de cuenta, que diga “Crear cuenta”.
-   - Se hace clic en el botón de confirmar y l nombre de usuario o correo electrónico existe, pero la contraseña es incorrecta --> Se mostrará un pop up que diga: “La contraseña es incorrecta” y en la parte de debajo un botón que redirija a la pantalla de recuperación de contraseña, que diga “Olvidé mi contraseña”.
+   - Se hace clic en el botón de confirmar y el nombre de usuario o correo electrónico existe, pero la contraseña es incorrecta --> Se mostrará un pop up que diga: “La contraseña es incorrecta” y en la parte de debajo un botón que redirija a la pantalla de recuperación de contraseña, que diga “Olvidé mi contraseña”.
       - Se hace clic en el botón de confirmar y el nombre de usuario o correo electrónico existe y la contraseña es correcta --> Se redirigirá al usuario a la pantalla principal correspondiente a su tipo de usuario.
 
    **Requerimientos - funcionalidades**
@@ -139,10 +139,9 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
    - Se hace clic sobre el botón de enviar y los campos no son rellenados de manera correcta --> Se mostrará un mensaje que especifique cuál es el error y en que parte se encuentra de la siguiente manera: “Hay un error en el campo x debido a y”
    - Se hace clic sobre el botón de enviar y los campos son rellenados de manera correcta --> Se mostrará un mensaje que diga “Gracias por ponerse en contacto con nosotros, le responderemos a la brevedad”
 
-
    **Requerimientos - funcionalidades**
    
-   Req-1: Pantalla de contacto. Desplegará el número de teléfono de atención al cliente, un cuadro de texto que diga “Si prefiere contactarse con nosotros por correo, agregue su correo, escoga la categoría y describa su problemática en el recuadro de abajo”, un TextBox con la etiquete correo, un Drop Down List con la etiqueta categoría y un Text Box muy grande con la etiqueta recomendaciones.
+   Req-1: Pantalla de contacto. Desplegará el número de teléfono de atención al cliente, un cuadro de texto que diga “Si prefiere contactarse con nosotros por correo, agregue su correo, escoja la categoría y describa su problemática en el recuadro de abajo”, un TextBox con la etiqueta correo, un Drop Down List con la etiqueta categoría y un Text Box muy grande con la etiqueta recomendaciones.
 
 
    ## Requerimientos del cliente
@@ -150,11 +149,44 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
    ### Pantalla principal
 
+**Descripción y prioridad**
+   - Prioridad Mewtwo.
+   - El usuario de tipo cliente accede a la aplicación, y en la pantalla principal se despliegan recomendaciones personalizadas, opciones populares del día, una barra de búsqueda y una barra de categorías, así como la opción de entrar a su perfil.
 
-   ### Categorías
+   **Secuencia de respuesta**
+   - Se hace clic en la barra de búsqueda --> Se aplica un efecto de blur a toda la pantalla excepto a la barra de búsqueda y se activa la capacidad de escribir en la barra de búsqueda
+      - Se hace clic en el botón de búsqueda (la lupa) o se confirma con enter después de haber escrito algo --> Se redirige al usuario a la pantalla de resultados, e internamente, se manda la información de lo escrito.
+      - Se hace clic en el botón de búsqueda (la lupa), se confirma con enter sin haber escrito algo, se presiona el botón de atrás propio del teléfono o se hace clic en la sección borrosa --> Se quita el efecto de blur y se regresa la pantalla de inicio a la normalidad.
 
+   - Se hace clic en la barra de categorías --> Se redirige al usuario a la pantalla de resultados, e internamente, se manda la información de la categoría seleccionada.
+   - Se hace clic en el botón del perfil de usuario --> Se redirige al usuario a la pantalla de perfil del usuario
+   - Se hace clic en alguna imagen de los comercios --> Se redirige al usuario a la pantalla de comercio correspondiente.
 
-   ### Búsqueda
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de Inicio. Estará distribuida de la siguiente manera. Ícono de usuario en la parte superior izquierda, barra de búsqueda a lado del ícono de usuario ocupando el resto de la parte superior, barra de categorías debajo de la barra de búsqueda, del espacio restante, en la mitad superior estarán las recomendaciones personalizadas de comercios y en la mitad inferior recomendaciones del día de comercios.
+   
+   Req-2: Barra de búsqueda. Se activará la funcionalidad de escribir al hacer clic en ella y se desactivará al confirmar la búsqueda o cancelarla.
+
+   Req-3: Carrousel de comercios. Se podrán ver los diferentes comercios y hacer un scroll horizontal para poder visualizar más opciones.
+
+   
+   ### Resultados
+
+**Descripción y prioridad**
+   - Prioridad Togepi.
+   - El usuario de tipo cliente tiene una idea general sobre lo que desea pedir, por lo que escoge una categoría o realiza una búsqueda y entonces, la aplicación despliega opciones que concuerden con lo buscado.
+
+   **Secuencia de respuesta**
+   - Se hace clic en el botón de filtros --> Se despliega el menú de filtros.
+   - Se hace clic en el botón de confirmar en el menú de filtros -->Se redespliega la pantalla de resultados aplicando los filtros correspondientes.
+   - Se hace clic en alguna imagen de los comercios --> Se redirige al usuario a la pantalla de comercio correspondiente.
+
+   **Requerimientos - funcionalidades**
+   
+   Req-1: Pantalla de resultados. Tendrá en la parte superior un botón que diga “filtros” y debajo de ella habrá un listado en forma de columna de los comercios que concuerden con los filtros especificados; se deberá de poder hacer scroll down en esta pantalla.
+   
+   Req-2: Menú de filtros. Tendrá como opciones de filtro un deslizador de precios, de distancia, de calificación y de palabras; se deberán de poder activar o desactivar haciendo clic sobre ellos y se notará que están activados si son de color verde o grises si se encuentran desactivados. Además, tendrá un botón de confirmar que aplicará los filtros de búsqueda a la pantalla de resultados, refrescándola para que muestre lo deseado.
 
 
    ### Comercios
@@ -192,4 +224,5 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
 
 # Documentación para replicar
+
 
