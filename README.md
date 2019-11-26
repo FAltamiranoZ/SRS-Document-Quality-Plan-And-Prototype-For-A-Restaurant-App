@@ -315,6 +315,21 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
 # Arquitectura y justificación
 
+~~Describiré ambas arquitecturas, y eventualmente borramos una, una vez nos pongamos bien de acuerdo en cual vamos a utilizar~~
+
+## Microservicios
+
+Se escogió microservicios como la arquitectura bajo la cual desarrollaríamos nuestro proyecto, tomando las siguientes como posibles opciones: Arquitectura por capas, basada en eventos, microkernel, microservicios y basada en espacio.
+
+Si el proyecto resulta tener el éxito que se espera de él, este se hará más popular, lo que implica que ingresará un mayor número de usuarios de ambos roles, tanto del tipo que pide comida, como del que la reparte. Esto obliga a nuestra aplicación a ser fácilmente escalable, lo cuál nos llevó a descalificar las arquitecturas de capas y microkernel, por la rigidez que haría muy complicado escalar a mediano y largo plazo.
+
+Además, cabe la posibilidad de que nuestro servicio se expanda, llegando así primero al campus de Santa Teresa, y posteriormente ampliando el servicio a otras universidades, tanto en la Ciudad de México como en provincia. Cada una de estas expansiones traería consigo necesidades específicas que deberán ser implementadas en su momento. Por este motivo, consideramos generar una API, la cuál deberá contener las características claves del servicio, y que sea a través de esta que se hagan las pequeñas modificaciones necesarias para satisfacer las diferentes necesidades de cada área. Con esto en mente, se descartaron las arquitecturas de espacio y eventos en favor de microservicios, ya que este último se presta mucho mejor a la generación de dicho API.
+
+## Arquitectura basada en eventos
+
+Se escogió la Arquitectura basada en eventos como la arquitectura bajo la cual desarrollaríamos nuestro proyecto, tomando las siguientes como posibles opciones: Arquitectura por capas, basada en eventos, microkernel, microservicios y basada en espacio.
+
+En específico, se seleccionó la arquitectura por eventos dado que será necesario establecer diferentes roles de usuario, el repartidor y el usuario, cada uno con sus eventos distintos, que deben ser manejados en conjunto. Por esta razón, se utilizarían diferentes manejadores de evento, de manera que cada rol tenga establecidas sus acciones dependiendo de su rol. Dichos eventos se podrán desarrollar en paralelo utilizando esta arquitectura, lo cuál otorgaría la versatilidad necesaria a nuestro proyecto para actualizarse y renovarse sin sacrificar los tiempos de desarrollo
 
 # Metodología y justificación
 
