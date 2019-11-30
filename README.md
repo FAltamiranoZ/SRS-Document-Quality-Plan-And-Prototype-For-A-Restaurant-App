@@ -14,6 +14,25 @@ Creado el 23 de noviembre del 2019
    1. Requerimientos del cliente
    1. Requerimientos del repartidor
 2. Plan de Calidad
+   1. Identificador del Plan de Calidad
+   1. Referencias
+   1. Introducción
+   1. Items de Prueba
+   1. Problemas o Riesgos del Software
+   1. Funcionalidades a probar
+   1. Funcionalidades que no serán probadas
+   1. Estrategia de acercamiento
+   1. Criterios para aprovar o reprobar un elemento
+   1. Criterios de suspensión y continuación de los requisitos
+   1. Entregables de las pruebas
+   1. Pruebas de requisitos pendientes
+   1. Necesidades especiales para el proyecto
+   1. Entrenamiento y necesidades del staff
+   1. Responsabilidades
+   1. Agenda
+   1. Planeación de Riesgos y eventualidades
+   1. Criterios para aprobación
+   1. Glosario
 3. Arquitectura y justificación
 4. Metodología y justificación
 5. Código del proyecto
@@ -312,6 +331,47 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
 
 # Plan de Calidad
 
+## Identificador del Plan de Calidad
+
+QD_RI_ISITAM.11.30
+
+## Referencias
+
+Las referencias utilizadas para la realización de este proyecto están en poder de la profesora Paulina Bustos Arellano, y pueden ser consultados por ella en el momento deseado. Hicimos un esfuerzo honesto para seguirlos al pie de la letra, y consideramos inecesario volver a replicarlos aquí.
+
+## Introducción
+
+## Items de Prueba
+
+## Problemas o Riesgos del Software
+
+## Funcionalidades a probar
+
+## Funcionalidades que no serán probadas
+
+## Estrategia de acercamiento
+
+## Criterios para aprovar o reprobar un elemento
+
+## Criterios de suspensión y continuación de los requisitos
+
+## Entregables de las pruebas
+
+## Pruebas de requisitos pendientes
+
+## Necesidades especiales para el proyecto
+
+## Entrenamiento y necesidades del staff
+
+## Responsabilidades
+
+## Agenda
+
+## Planeación de Riesgos y eventualidades
+
+## Criterios para aprobación
+
+## Glosario
 
 # Arquitectura y justificación
 
