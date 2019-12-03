@@ -9,10 +9,35 @@ Creado el 23 de noviembre del 2019
 
 # Tabla de Contenidos
 
-1. Software Requirements
-   1. Requerimientos generales
-   1. Requerimientos del cliente
-   1. Requerimientos del repartidor
+1. Software Requirements Specification
+   1. Introducción
+      1. Propósito
+      1. Convenciones del documento
+      1. Audiencia y recomendaciones de lectura
+      1. Objetivo
+      1. Referencias
+   1. Descripción
+      1. Perspectiva del producto
+      1. Funcionalidades del producto
+      1. Clases y características del usuario
+      1. Ambiente de operación
+      1. Restricciones de diseño e implementación
+      1. Documentación para el usuario
+      1. Suposiciones y dependencias
+   1. Requerimientos de interfaz externa
+      1. Interfaces del usuario
+      1. Interfaces del hardware
+      1. Interfaces del software
+      1. Interfaces de comunicación
+   1. Funcionalidades del sistema
+      1. Requerimientos generales
+      1. Requerimientos del cliente
+      1. Requerimientos del repartidor
+   1. Otros requerimientos
+      1. Requerimientos de desempeño
+      1. Requerimientos de seguridad
+      1. Atributos de calidad de software
+      1. Reglas de negocio
 2. Plan de Calidad
    1. Identificador del Plan de Calidad
    1. Referencias
@@ -39,12 +64,136 @@ Creado el 23 de noviembre del 2019
 6. Documentación para replicar
 
 
-# Software requirements
+# Software requirements specification
 
-Debido a la naturaleza de la aplicación, tendremos 2 tipos de usuarios; razón por la cual, nuestros requerimientos se dividirán en 3.
-Esto para poder expresar de manera correcta los requerimientos que comparten y los exclusivos de cada usuario.
+   ## Introducción
 
-   ## Requerimientos generales
+
+   ### Propósito
+
+   El propósito de este proyecto es crear una aplicación que resuelva la necesidad de tener un acceso rápido y fácil a las distintas opciones de alimentos que se encuentran alrededor del campus ITAM.
+
+
+   ### Convenciones del documento
+   
+   Para la parte de los requerimientos funcionales:
+   - Se usará un mensaje cuando no haya interacción con el usuario y un pop up cuando la haya (botones, confirmación, cuadros a rellenar, etc).
+   - Solo se registrará un requerimiento adicional si dicha funcionalidad no esta presente desde el inicio en la carga de la pantalla.
+   - Para las prioridades se utilizó una clasificación basada en Pokemon, la cual va de menor a mayor de la siguiente manera: Magikarp, Togepi, Charizard y Mewtwo
+
+   Generales:
+   - Cuando este escrito comercio, se hace referencia a cada negocio registrado, como por ejemplo el globo, o chente.
+   - En el caso del Software requirements specification, se eliminaron secciones sugeridas por el documento debido a que no aplicaban o no eran relevantes para este proyecto.
+
+   Funcionamiento de la aplicación:
+   - Todo comercio estará representado por una tarjeta, la cual cuenta con la imagen principal escogida, el nombre del lugar, distancia de la ubicación actual y clasificación.
+   - Se considera que para regresar a la página anterior, se usa el botón de atrás propio del teléfono.
+
+   Para la sección de funcionalidades del sistema:
+   - Debido a la naturaleza de la aplicación, tendremos 2 tipos de usuarios; razón por la cual, nuestros requerimientos se dividirán en 3. Esto para poder expresar de manera correcta los requerimientos que comparten y los exclusivos de cada usuario.
+
+
+   ### Audiencia y recomendaciones de lectura
+
+   Este documento fue escrito teniendo en mente que aquellos interesados en su lectura serían solamente miembros pertenecientes al grupo; tanto alumnos como la profesora.
+   Razón por la cual, se espera que todos cuenten con el mismo nivel y no haya que introducir términos con los que ya todos estan familiarizados
+
+
+   ### Alcance
+
+   Se espera que este producto tenga un impacto en el alumnado de la comunidad ITAM y en la comunidad que estos generan, involucrando de esta manera a profesores, administrativos, miembros de la colonia, etc.
+
+
+   ### Referencias
+
+   La composición de este artículo hace referencia a la estructura sugerida por los siguientes documentos:
+   - Software Requirements Specification by Karl E. Wiegers.
+   - Test Plan Outline, the IEEE 829 format.
+
+
+   ## Descripción
+
+
+   ### Perspectiva del producto
+
+   El producto especificado en este documento es independiente; no es parte de la familia de ningún otro producto que hayamos desarrollado previamente ni una funcionalidad. Es un producto completamente nuevo y autocontenido.
+
+
+   ### Funcionalidades del producto
+
+   - Recuperación de contraseña.
+   - Creación de nueva contraseña.
+   - Iniciar sesión.
+   - Crear cuenta.
+   - Perfil del usuario.
+   - Información de contacto.
+   - Pantalla principal del cliente.
+   - Resultados.
+   - Comercios.
+   - Carrito.
+   - Orden.
+   - Reseña.
+   - Pantalla principal del repartidor.
+   - Pedido.
+
+
+   ### Clases y características del usuario
+
+   Principalmente, los usuarios de la aplicación se dividirán en 2, clientes y repartidores. Y en ambos casos, se tendrán pocas diferencias entre usuarios de la misma clase, debido a que la zona de trabajo que comprende la aplicación es muy reducida (solamente el ITAM).
+   Por el lado de los clientes, se espera que haya 2 tipos de usuarios, profesores y alumnos. 
+   - Se espera que los profesores tengan un menor uso de la aplicación debido a que podrían considerar incomodo que un alumno que conocen o al que le dan clase venga a darles comida. Como perfil, se espera que todos tengan un nivel suficiente de habilidad técnica para hacer uso de la aplicación sin problema alguno.
+   - Se espera que los estudiantes tengan un uso extensivo de la aplicación debido a las largas estancias que estan en el ITAM y que no suelen ver un problema con que un conocido o compañero les traiga la comida. De la misma manera, se espera que todos tengan la suficiente habilidad para usar la aplicación sin problema.
+   
+   Por el lado de los repartidores, se espera que de igual manera haya 2 tipos de usuarios, alumnos y miembros de la comunidad Tizapan.
+   - Se espera que los estudiantes no hagan tanto uso de esta funcionaliad, ya que podrían no sentirse comodos con ir a recogerle la comida a alguno de sus iguales o inclusive, alguno de sus compañeros; además, los horarios que manejan dificultarían la disponibilidad de los alumnos para poder sacar el mayor provecho de la aplicación.
+   - Se espera que los miembros de la comunidad Tizapan sean los que un mayor uso hagan de esta aplicación, debido a su mayor flexibilidad de horarios y que en su mayor parte no tendrían ningun problema con llevarle comida a algún alumno; la única problemática es que podrían llegar a experimentar dificultades con la aplicación, considerando que tal vez no todos tengan la suficiente habilidad técnica (por simple que sea esta aplicación) para poder hacer uso de ella. 
+
+
+   ### Ambiente de operación
+
+
+
+
+   ### Restricciones de diseño e implementación
+
+   El diseño de esta aplicación se realizó tomando en cuenta las siguientes restricciones.
+   - Una sola tarjeta de crédito por usuario
+   - No hay pantalla de configuración
+   - El proveedor no puede cancelar el pedido, pero si puede rechazarlo.
+   - No se califica ni se reporta a los proveedores
+   - No hay comunicación entre cliente y proveedor
+   
+
+   ### Suposiciones y dependencias
+
+
+
+
+   ### Documentación del usuario
+
+
+
+
+   ## Requerimientos de interfaz externa
+
+
+   ### Interfaces del usuario
+
+
+
+   ### Interfaces del hardware
+
+
+
+   ### Interfaces del software
+
+
+
+   ### Interfaces de comunicación
+
+
+
+   ## Funcionalidades del sistema
 
    ### Recuperación de contraseña
 
@@ -326,6 +475,25 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
    **Requerimientos - funcionalidades**
    
    Req-1: Pantalla de Pedido. De desplegará en pantalla toda la información relevante al pedido; es decir, el nombre y ubicación y distancia hacia lugar del que se tiene que recoger la comida y nombre ubicación y distancia hacia el lugar donde se debe de entregar la comida. Además, debajo de esta información hay un botón que dice “mapa” que le despliega al usuario la ruta a seguir calculada por la aplicación de navegación por GPS predeterminada de su teléfono.
+
+
+
+   ## Otros requerimientos
+
+
+   ### Requerimientos de desempeño
+
+
+
+   ### Requerimientos de seguridad
+
+
+
+   ### Atributos de calidad de software
+
+
+
+   ### Reglas de negocio
 
 
 
