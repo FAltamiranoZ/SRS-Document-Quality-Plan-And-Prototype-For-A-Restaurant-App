@@ -11,13 +11,33 @@ Creado el 23 de noviembre del 2019
 
 1. Software Requirements Specification
    1. Introducción
+      1. Propósito
+      1. Convenciones del documento
+      1. Audiencia y recomendaciones de lectura
+      1. Objetivo
+      1. Referencias
    1. Descripción
+      1. Perspectiva del producto
+      1. Funcionalidades del producto
+      1. Clases y características del usuario
+      1. Ambiente de operación
+      1. Restricciones de diseño e implementación
+      1. Documentación para el usuario
+      1. Suposiciones y dependencias
    1. Requerimientos de interfaz externa
+      1. Interfaces del usuario
+      1. Interfaces del hardware
+      1. Interfaces del software
+      1. Interfaces de comunicación
    1. Funcionalidades del sistema
       1. Requerimientos generales
       1. Requerimientos del cliente
       1. Requerimientos del repartidor
    1. Otros requerimientos
+      1. Requerimientos de desempeño
+      1. Requerimientos de seguridad
+      1. Atributos de calidad de software
+      1. Reglas de negocio
 2. Plan de Calidad
    1. Identificador del Plan de Calidad
    1. Referencias
@@ -44,12 +64,82 @@ Creado el 23 de noviembre del 2019
 6. Documentación para replicar
 
 
-# Software requirements
+# Software requirements specification
 
-Debido a la naturaleza de la aplicación, tendremos 2 tipos de usuarios; razón por la cual, nuestros requerimientos se dividirán en 3.
-Esto para poder expresar de manera correcta los requerimientos que comparten y los exclusivos de cada usuario.
+   ## Introducción
 
-   ## Requerimientos generales
+
+   ### Propósito
+
+
+
+   ### Convenciones del documento
+
+
+
+   ### Audiencia y recomendaciones de lectura
+
+
+
+   ### Objetivo
+
+
+
+   ### Referencias
+
+
+
+   ## Descripción
+
+
+   ### Perspectiva del producto
+
+
+
+   ### Funcionalidades del producto
+
+
+
+   ### Clases y características del usuario
+
+
+
+   ### Ambiente de operación
+
+
+
+   ### Restricciones de diseño e implementación
+
+
+
+   ### Documentación para el usuario
+
+
+
+   ### Suposiciones y dependencias
+
+
+
+   ## Requerimientos de interfaz externa
+
+
+   ### Interfaces del usuario
+
+
+
+   ### Interfaces del hardware
+
+
+
+   ### Interfaces del software
+
+
+
+   ### Interfaces de comunicación
+
+
+
+   ## Funcionalidades del sistema
 
    ### Recuperación de contraseña
 
@@ -331,6 +421,25 @@ Esto para poder expresar de manera correcta los requerimientos que comparten y l
    **Requerimientos - funcionalidades**
    
    Req-1: Pantalla de Pedido. De desplegará en pantalla toda la información relevante al pedido; es decir, el nombre y ubicación y distancia hacia lugar del que se tiene que recoger la comida y nombre ubicación y distancia hacia el lugar donde se debe de entregar la comida. Además, debajo de esta información hay un botón que dice “mapa” que le despliega al usuario la ruta a seguir calculada por la aplicación de navegación por GPS predeterminada de su teléfono.
+
+
+
+   ## Otros requerimientos
+
+
+   ### Requerimientos de desempeño
+
+
+
+   ### Requerimientos de seguridad
+
+
+
+   ### Atributos de calidad de software
+
+
+
+   ### Reglas de negocio
 
 
 
