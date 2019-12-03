@@ -9,10 +9,15 @@ Creado el 23 de noviembre del 2019
 
 # Tabla de Contenidos
 
-1. Software Requirements
-   1. Requerimientos generales
-   1. Requerimientos del cliente
-   1. Requerimientos del repartidor
+1. Software Requirements Specification
+   1. Introducción
+   1. Descripción
+   1. Requerimientos de interfaz externa
+   1. Funcionalidades del sistema
+      1. Requerimientos generales
+      1. Requerimientos del cliente
+      1. Requerimientos del repartidor
+   1. Otros requerimientos
 2. Plan de Calidad
    1. Identificador del Plan de Calidad
    1. Referencias
