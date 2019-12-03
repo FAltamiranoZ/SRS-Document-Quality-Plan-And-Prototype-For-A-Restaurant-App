@@ -72,7 +72,7 @@ class _DetailPageState extends State<DetailPage> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                          "Swiss cheese, VCH original spread and\npickles. No modifications",
+                          "20 Alitas de barbecue, con papas fritas y salsa blue cheese",
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
@@ -89,7 +89,7 @@ class _DetailPageState extends State<DetailPage> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        "Bread Choises",
+                        "Bebida",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -104,7 +104,7 @@ class _DetailPageState extends State<DetailPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          "Whole wheat ( Sliced )",
+                          "Coca Cola 500ml",
                           style: TextStyle(
                             fontSize: 17,
                             color: _radioValue == 0 ? Colors.black: Colors.grey
@@ -115,7 +115,7 @@ class _DetailPageState extends State<DetailPage> {
                             value: 0,
                             groupValue: _radioValue,
                             onChanged: _handleChoiseChanged,
-                            activeColor: Color(0xffFF4500),
+                            activeColor: Color(0xFF7CB342),
                         )
                       ],
 
@@ -125,7 +125,7 @@ class _DetailPageState extends State<DetailPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                            "3rd Slice / Double Decker",
+                            "Fanta  500ml",
                             style: TextStyle(
                                 fontSize: 17,
                                 color: _radioValue == 1 ? Colors.black: Colors.grey
@@ -136,7 +136,7 @@ class _DetailPageState extends State<DetailPage> {
                           value: 1,
                           groupValue: _radioValue,
                           onChanged: _handleChoiseChanged,
-                          activeColor: Color(0xffFF4500),
+                          activeColor: Color(0xFF7CB342),
                         )
                       ],
 
@@ -146,7 +146,7 @@ class _DetailPageState extends State<DetailPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                            "Dutch Crunch Roll",
+                            "Boing de mango  500ml",
                             style: TextStyle(
                                 fontSize: 17,
                                 color: _radioValue == 2 ? Colors.black: Colors.grey
@@ -157,7 +157,7 @@ class _DetailPageState extends State<DetailPage> {
                           value: 2,
                           groupValue: _radioValue,
                           onChanged: _handleChoiseChanged,
-                          activeColor: Color(0xffFF4500),
+                          activeColor: Color(0xFF7CB342),
                         )
                       ],
 
@@ -166,11 +166,35 @@ class _DetailPageState extends State<DetailPage> {
                     SizedBox(height: 40,),
 
                     RaisedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context){
+                            return AlertDialog(
+                              title: new Text("Hacer pedido"),
+                              content: new Text("La comida llegara a la ubicación configurada al registro"),
+                              actions: <Widget>[
+                                new FlatButton(
+                                  child: new Text("Cerrar"),
+                                  onPressed: (){
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                                new FlatButton(
+                                  child: new Text("Aceptar"),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                              ],
+                            );
+                          }
+                        );
+                      },
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      color: Color(0xffFF4500),
+                      color: Color(0xFF7CB342),
                       child: Container(
                         height: 70,
                         width: double.infinity,
@@ -180,7 +204,7 @@ class _DetailPageState extends State<DetailPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "Add to Order",
+                                "Hacer pedido",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
@@ -190,7 +214,7 @@ class _DetailPageState extends State<DetailPage> {
                               ),
 
                               Text(
-                                "\$ 15.90",
+                                "\$ 150.90",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 18,
@@ -248,9 +272,9 @@ class _DetailPageState extends State<DetailPage> {
 
           Positioned(
             top: 150,
-            left: 30,
+            left: 75,
             child: Text(
-              "Old\nFashioned.",
+              "Tu platillo.",
               style: TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,

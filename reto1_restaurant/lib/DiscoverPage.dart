@@ -12,9 +12,9 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
 
 
   List imageRoutes = [
-    'assets/images/food1.jpg',
+    'assets/images/tacosfood.jpg',
     'assets/images/food2.jpeg',
-    'assets/images/food3.jpg',
+    'assets/images/pizzafood.jpg',
     'assets/images/food4.jpeg'
   ];
 
@@ -26,10 +26,10 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   ];
 
   List imageDescription = [
-    'Delectable',
-    'Delicious.',
-    'Exquisite.',
-    'Luscious.'
+    'Don Manolito',
+    'Toldo Rojo',
+    'Pizzas Perro Negro',
+    'Hotters'
   ];
 
   int selectedItem = 0;
@@ -43,12 +43,12 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   ];
 
   List imageIconsDescription = [
-    'Turkish',
-    'Japanese',
-    'Mexican',
-    'American',
-    'Italian',
-    'Chinese'
+    'Turquesa',
+    'Japonesa',
+    'Mexicana',
+    'Americana',
+    'Italiana',
+    'China'
   ];
 
   @override
@@ -63,7 +63,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
             padding: const EdgeInsets.all(10.0),
             child: Image(
               image: AssetImage(
-                  'assets/images/heyo_logo.png'
+                  'assets/images/YF.png'
               ),
             ),
           ),
@@ -71,7 +71,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
             FlatButton.icon(
                 onPressed: (){},
                 icon: Icon(Icons.explore),
-                label: Text("Ecuador")
+                label: Text("CDXM, ITAM")
             )
           ],
         ),
@@ -104,11 +104,10 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                                 )
                             ),
                           ),
-                          new Align(
-                            alignment: Alignment.center,
+                          new Center(
                             child: Text(
                               imageDescription[index],
-
+                              textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: 50,
                                   color: Colors.white,
@@ -132,7 +131,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 30),
                     child: Text(
-                      "Categories",
+                      "Categorias",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -168,7 +167,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                               child: Material(
                                 child: Ink(
                                   decoration: BoxDecoration(
-                                      border: Border.all(color: selectedItem==index ? Color(0xffFFDACC):Colors.grey[500], width: 3),
+                                      border: Border.all(color: selectedItem==index ? Color(0xffFF33691E):Colors.grey[500], width: 3),
                                       shape: BoxShape.circle
                                   ),
                                   child: InkWell(
@@ -188,7 +187,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                             imageIconsDescription[index],
                             style: TextStyle(
                                 fontSize: 15,
-                                color: selectedItem==index ? Color(0XFFFF7A48):Colors.grey[500]
+                                color: selectedItem==index ? Color(0xffFF33691E):Colors.grey[500]
                             ),
                           ),
                         ],
@@ -207,7 +206,7 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      "396 Restaurants",
+                      "87 Restaurantes cerca",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18
@@ -216,12 +215,12 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
 
                     FlatButton.icon(
                         onPressed: (){},
-                        icon: Icon(Icons.filter_list, color: Color(0XFFFF4C0F)),
+                        icon: Icon(Icons.filter_list, color: Color(0xffFF33691E)),
                         label: Text(
-                          "Filter",
+                          "Filtrar",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Color(0XFFFF4C0F),
+                            color: Color(0xffFF33691E),
                               fontSize: 18
                           ),
                         )
