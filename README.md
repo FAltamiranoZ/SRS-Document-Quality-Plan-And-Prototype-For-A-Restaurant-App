@@ -116,30 +116,61 @@ Creado el 23 de noviembre del 2019
 
    ### Perspectiva del producto
 
+   El producto especificado en este documento es independiente; no es parte de la familia de ningún otro producto que hayamos desarrollado previamente ni una funcionalidad. Es un producto completamente nuevo y autocontenido.
 
 
    ### Funcionalidades del producto
 
+   - Recuperación de contraseña.
+   - Creación de nueva contraseña.
+   - Iniciar sesión.
+   - Crear cuenta.
+   - Perfil del usuario.
+   - Información de contacto.
+   - Pantalla principal del cliente.
+   - Resultados.
+   - Comercios.
+   - Carrito.
+   - Orden.
+   - Reseña.
+   - Pantalla principal del repartidor.
+   - Pedido.
 
 
    ### Clases y características del usuario
 
+   Principalmente, los usuarios de la aplicación se dividirán en 2, clientes y repartidores. Y en ambos casos, se tendrán pocas diferencias entre usuarios de la misma clase, debido a que la zona de trabajo que comprende la aplicación es muy reducida (solamente el ITAM).
+   Por el lado de los clientes, se espera que haya 2 tipos de usuarios, profesores y alumnos. 
+   - Se espera que los profesores tengan un menor uso de la aplicación debido a que podrían considerar incomodo que un alumno que conocen o al que le dan clase venga a darles comida. Como perfil, se espera que todos tengan un nivel suficiente de habilidad técnica para hacer uso de la aplicación sin problema alguno.
+   - Se espera que los estudiantes tengan un uso extensivo de la aplicación debido a las largas estancias que estan en el ITAM y que no suelen ver un problema con que un conocido o compañero les traiga la comida. De la misma manera, se espera que todos tengan la suficiente habilidad para usar la aplicación sin problema.
+   
+   Por el lado de los repartidores, se espera que de igual manera haya 2 tipos de usuarios, alumnos y miembros de la comunidad Tizapan.
+   - Se espera que los estudiantes no hagan tanto uso de esta funcionaliad, ya que podrían no sentirse comodos con ir a recogerle la comida a alguno de sus iguales o inclusive, alguno de sus compañeros; además, los horarios que manejan dificultarían la disponibilidad de los alumnos para poder sacar el mayor provecho de la aplicación.
+   - Se espera que los miembros de la comunidad Tizapan sean los que un mayor uso hagan de esta aplicación, debido a su mayor flexibilidad de horarios y que en su mayor parte no tendrían ningun problema con llevarle comida a algún alumno; la única problemática es que podrían llegar a experimentar dificultades con la aplicación, considerando que tal vez no todos tengan la suficiente habilidad técnica (por simple que sea esta aplicación) para poder hacer uso de ella. 
 
 
    ### Ambiente de operación
 
 
 
+
    ### Restricciones de diseño e implementación
 
+   El diseño de esta aplicación se realizó tomando en cuenta las siguientes restricciones.
+   - Una sola tarjeta de crédito por usuario
+   - No hay pantalla de configuración
+   - El proveedor no puede cancelar el pedido, pero si puede rechazarlo.
+   - No se califica ni se reporta a los proveedores
+   - No hay comunicación entre cliente y proveedor
    
 
-
-   ### Documentación para el usuario
-
-
-
    ### Suposiciones y dependencias
+
+
+
+
+   ### Documentación del usuario
+
 
 
 
