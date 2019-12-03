@@ -71,22 +71,44 @@ Creado el 23 de noviembre del 2019
 
    ### Propósito
 
+   El propósito de este proyecto es crear una aplicación que resuelva la necesidad de tener un acceso rápido y fácil a las distintas opciones de alimentos que se encuentran alrededor del campus ITAM.
 
 
    ### Convenciones del documento
+   
+   Para la parte de los requerimientos funcionales:
+   - Se usará un mensaje cuando no haya interacción con el usuario y un pop up cuando la haya (botones, confirmación, cuadros a rellenar, etc).
+   - Solo se registrará un requerimiento adicional si dicha funcionalidad no esta presente desde el inicio en la carga de la pantalla.
+   - Para las prioridades se utilizó una clasificación basada en Pokemon, la cual va de menor a mayor de la siguiente manera: Magikarp, Togepi, Charizard y Mewtwo
 
+   Generales:
+   - Cuando este escrito comercio, se hace referencia a cada negocio registrado, como por ejemplo el globo, o chente.
+   - En el caso del Software requirements specification, se eliminaron secciones sugeridas por el documento debido a que no aplicaban o no eran relevantes para este proyecto.
+
+   Funcionamiento de la aplicación:
+   - Todo comercio estará representado por una tarjeta, la cual cuenta con la imagen principal escogida, el nombre del lugar, distancia de la ubicación actual y clasificación.
+   - Se considera que para regresar a la página anterior, se usa el botón de atrás propio del teléfono.
+
+   Para la sección de funcionalidades del sistema:
+   - Debido a la naturaleza de la aplicación, tendremos 2 tipos de usuarios; razón por la cual, nuestros requerimientos se dividirán en 3. Esto para poder expresar de manera correcta los requerimientos que comparten y los exclusivos de cada usuario.
 
 
    ### Audiencia y recomendaciones de lectura
 
+   Este documento fue escrito teniendo en mente que aquellos interesados en su lectura serían solamente miembros pertenecientes al grupo; tanto alumnos como la profesora.
+   Razón por la cual, se espera que todos cuenten con el mismo nivel y no haya que introducir términos con los que ya todos estan familiarizados
 
 
-   ### Objetivo
+   ### Alcance
 
+   Se espera que este producto tenga un impacto en el alumnado de la comunidad ITAM y en la comunidad que estos generan, involucrando de esta manera a profesores, administrativos, miembros de la colonia, etc.
 
 
    ### Referencias
 
+   La composición de este artículo hace referencia a la estructura sugerida por los siguientes documentos:
+   - Software Requirements Specification by Karl E. Wiegers.
+   - Test Plan Outline, the IEEE 829 format.
 
 
    ## Descripción
@@ -110,6 +132,7 @@ Creado el 23 de noviembre del 2019
 
    ### Restricciones de diseño e implementación
 
+   
 
 
    ### Documentación para el usuario
