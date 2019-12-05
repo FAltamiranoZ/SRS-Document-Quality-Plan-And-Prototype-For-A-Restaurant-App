@@ -56,7 +56,7 @@ Creado el 23 de noviembre del 2019
    1. Responsabilidades
    1. Agenda
    1. Planeación de Riesgos y eventualidades
-   1. Criterios para aprobación
+   1. Estatus de aprobación
    1. Glosario
 3. Arquitectura y justificación
 4. Metodología y justificación
@@ -501,7 +501,7 @@ Creado el 23 de noviembre del 2019
 
 ## Identificador del Plan de Calidad
 
-QD_RI_ISITAM.11.30
+YourFood_ISITAM.12.04
 
 ## Referencias
 
@@ -509,21 +509,33 @@ Las referencias utilizadas para la realización de este proyecto están en poder
 
 ## Introducción
 
+Con el objetivo de hacer el mejor proyecto posible, el equipo de YourFood se planteó una serie de pruebas, las cuales ayudarán a probar que el sistema es lo suficientemente seguro para ser lanzado al mercado, y ser de utilidad a todos los usuarios que pudieran utilizarlo. Dichas pruebas serán descritas a continuación, y demostradas en vivo frente al panel de inversores el Viernes 6 de Diciembre, aproximadamente a las 07:30 am.
+
+Para realizar dicha tarea, nuestro documento base fueron las presentaciones de la profesora Paulina Bustos Arellano, las cuales fueron de gran utilidad para alcanzar dicha finalidad. Sin embargo, dado que el tiempo para la realización de este proyecto no fue tan amplio como parecía en nuestras mentes, el espectro de prueba es limitado a lo que pudo programar Gerardo en la Demo. El proyecto final, sin embargo, tendrá como base todas las funcionalidades descritas en este documento, y si se nos ocurren más, pues más.
+
 ## Items de Prueba
+
+~~Tengo que checar la Demo con Gerardo~~
 
 ## Problemas o Riesgos del Software
 
 ## Funcionalidades a probar
 
+~~Tengo que checar la Demo con Gerardo~~
+
 ## Funcionalidades que no serán probadas
+
+~~Tengo que checar la Demo con Gerardo~~
 
 ## Estrategia de acercamiento
 
-## Criterios para aprovar o reprobar un elemento
+## Criterios para aprobar o reprobar un elemento
 
 ## Criterios de suspensión y continuación de los requisitos
 
 ## Entregables de las pruebas
+
+~~Tengo que checar la Demo con Gerardo~~
 
 ## Pruebas de requisitos pendientes
 
@@ -537,7 +549,7 @@ Las referencias utilizadas para la realización de este proyecto están en poder
 
 ## Planeación de Riesgos y eventualidades
 
-## Criterios para aprobación
+## Estatus de aprobación
 
 ## Glosario
 
