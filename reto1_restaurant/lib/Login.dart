@@ -16,6 +16,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     FlutterStatusbarcolor.setStatusBarColor(Colors.white);
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       appBar: AppBar(
         brightness: Brightness.light,
@@ -39,7 +40,7 @@ class _LoginState extends State<Login> {
                   SizedBox(height: 30,),
 
                   Text(
-                    "Bienvenido a YourFood.",
+                    "Gracias por regresar",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black87,
@@ -72,7 +73,7 @@ class _LoginState extends State<Login> {
                       padding: EdgeInsets.only(left: 16.0,right: 16.0,top: 26.0),
                     child: Column(
                       children: <Widget>[
-                        Text("Registro",
+                        Text("Escribe tus datos",
                           style: TextStyle(
                             fontSize: 18,
                             fontFamily: "Poppins-Bold",

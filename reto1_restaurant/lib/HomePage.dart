@@ -4,6 +4,7 @@ import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:reto1_restaurant/ContraPage.dart';
 import 'package:reto1_restaurant/DiscoverPage.dart';
 import 'package:reto1_restaurant/Login.dart';
+import 'package:reto1_restaurant/SignUpPage.dart';
 
 class myHome extends StatefulWidget {
   static const String routeName = 'HomePage';
@@ -98,7 +99,7 @@ class _myHomeState extends State<myHome> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                              prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
 
                             },
                             child: Container(
@@ -125,7 +126,8 @@ class _myHomeState extends State<myHome> {
 
                           GestureDetector(
                             onTap: (){
-                              Navigator.of(context).pushReplacementNamed('DiscoverPage');
+                              prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                              // Navigator.of(context).pushReplacementNamed('DiscoverPage');
                             },
                             child: Container(
                               height: 60,

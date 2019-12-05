@@ -3,13 +3,13 @@ import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:reto1_restaurant/DiscoverPage.dart';
 import 'package:reto1_restaurant/HomePage.dart';
 
-class ContraPage extends StatefulWidget {
-  static const String routeName = 'Login';
+class SignUpPage extends StatefulWidget {
+  static const String routeName = 'SignUpPage';
   @override
-  _ContraPageState createState() => _ContraPageState();
+  _SignUpPageState createState() => _SignUpPageState();
 }
 
-class _ContraPageState extends State<ContraPage> {
+class _SignUpPageState extends State<SignUpPage> {
 
 
   @override
@@ -40,7 +40,7 @@ class _ContraPageState extends State<ContraPage> {
                   SizedBox(height: 30,),
 
                   Text(
-                    "Recupera tu contraseña",
+                    "Bienvenido a YourFood.",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black87,
@@ -73,7 +73,7 @@ class _ContraPageState extends State<ContraPage> {
                       padding: EdgeInsets.only(left: 16.0,right: 16.0,top: 26.0),
                     child: Column(
                       children: <Widget>[
-                        Text("Correo de usuario",
+                        Text("Registrar nueva cuenta",
                           style: TextStyle(
                             fontSize: 18,
                             fontFamily: "Poppins-Bold",
@@ -83,13 +83,15 @@ class _ContraPageState extends State<ContraPage> {
                         SizedBox(
                           height: 10,
                         ),
-                        // Text("Correo",
-                        //   style: TextStyle(
-                        //     fontSize: 18,
-                        //     fontFamily: "Poppins-Bold",
-                        //     letterSpacing: .6
-                        //   ),
-                        // ),
+                        TextField(
+                          decoration: InputDecoration(
+                            hintText: "Nombre",
+                            hintStyle: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 12.0
+                            )
+                          ),
+                        ),
                         TextField(
                           decoration: InputDecoration(
                             hintText: "Correo",
@@ -105,7 +107,7 @@ class _ContraPageState extends State<ContraPage> {
                         TextField(
                           obscureText: true,
                           decoration: InputDecoration(
-                            hintText: "Última contraseña que recuerdas",
+                            hintText: "Contraseña",
                             hintStyle: TextStyle(
                               color: Colors.grey,
                               fontSize: 12.0
@@ -116,7 +118,6 @@ class _ContraPageState extends State<ContraPage> {
                     ),
                     ),
                   ),
-
 
                 ],
               ),
@@ -167,23 +168,7 @@ class _ContraPageState extends State<ContraPage> {
 
                           GestureDetector(
                             onTap: (){
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context){
-                                  return AlertDialog(
-                                    title: new Text("Te estará llegando un mensaje al correo electrónico"),
-                                    content: new Text("Seguir las instrucciones del correo"),
-                                    actions: <Widget>[
-                                      new FlatButton(
-                                        child: new Text("Aceptar"),
-                                        onPressed: () {
-                                          Navigator.of(context).pop();
-                                        },
-                                      ),
-                                    ],
-                                  );
-                                }
-                              );
+                              Navigator.of(context).pushReplacementNamed('DiscoverPage');
                             },
                             child: Container(
                               height: 60,
@@ -195,7 +180,7 @@ class _ContraPageState extends State<ContraPage> {
 
                               child: Center(
                                 child: Text(
-                                  "Enviar"
+                                  "Registrar"
                                   ,style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 18,
@@ -222,10 +207,10 @@ class _ContraPageState extends State<ContraPage> {
                             ),
                             children: <TextSpan>[
                               TextSpan(
-                                  text: "Si no obtienes el correo comunícate al "
+                                  text: "Al registrarse, estaras de acuerdo con los "
                               ),
                               TextSpan(
-                                  text: "55897723 o help@yourfood.com", style: TextStyle(
+                                  text: "términos de polìtica YourFood", style: TextStyle(
                                 decoration: TextDecoration.underline,
                               )
                               ),
@@ -234,10 +219,9 @@ class _ContraPageState extends State<ContraPage> {
                       )
                     ],
                   ),
-
-
                 ),
               )
+
             ],
           )
       ),
