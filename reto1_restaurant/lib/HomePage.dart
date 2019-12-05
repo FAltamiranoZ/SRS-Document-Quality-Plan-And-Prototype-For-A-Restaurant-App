@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import 'package:reto1_restaurant/ContraPage.dart';
 import 'package:reto1_restaurant/DiscoverPage.dart';
 import 'package:reto1_restaurant/Login.dart';
 
@@ -98,6 +99,7 @@ class _myHomeState extends State<myHome> {
                           GestureDetector(
                             onTap: (){
                               prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+
                             },
                             child: Container(
                               height: 60,
@@ -151,26 +153,11 @@ class _myHomeState extends State<myHome> {
                       ),
 
                       SizedBox(height: 25,),
-
-                      RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                            style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                color: Colors.black87,
-                                fontSize: 12
-                            ),
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: "Al registrarse, estaras de acuerdo con los "
-                              ),
-                              TextSpan(
-                                  text: "términos de polìtica YourFood", style: TextStyle(
-                                decoration: TextDecoration.underline,
-                              )
-                              ),
-                            ]
-                        ),
+                      FlatButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ContraPage() ));
+                        },
+                        child: new Text("Olvide mi contraseña"),
                       )
                     ],
                   ),
