@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:reto1_restaurant/DiscoverPage.dart';
+import 'package:reto1_restaurant/Login.dart';
 
 class myHome extends StatefulWidget {
   static const String routeName = 'HomePage';
@@ -95,7 +97,7 @@ class _myHomeState extends State<myHome> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
-                              print("boton 1");
+                              prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
                             },
                             child: Container(
                               height: 60,
