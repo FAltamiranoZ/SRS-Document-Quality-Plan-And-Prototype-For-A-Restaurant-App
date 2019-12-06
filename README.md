@@ -81,7 +81,7 @@ Creado el 23 de noviembre del 2019
    - En el caso del Software requirements specification, se eliminaron secciones sugeridas por el documento debido a que no aplicaban o no eran relevantes para este proyecto.
 
    Funcionamiento de la aplicación:
-   - Todo comercio estará representado por una tarjeta, la cual cuenta con la imagen principal escogida, el nombre del lugar, distancia de la ubicación actual y clasificación.
+   - Todo comercio estará representado por una tarjeta, la cual cuenta con la imagen principal escogida, el nombre del lugar.
    - Se considera que para regresar a la página anterior, se usa el botón de atrás propio del teléfono.
 
    Para la sección de funcionalidades del sistema:
@@ -152,7 +152,8 @@ Creado el 23 de noviembre del 2019
    ### Restricciones de diseño e implementación
 
    El diseño de esta aplicación se realizó tomando en cuenta las siguientes restricciones.
-   - Una sola tarjeta de crédito por usuario
+   - La selección de productos es limitada
+   - Una sola tarjeta de crédito por usuario(por el momento no se puede configurar)
    - No hay pantalla de configuración
    - El proveedor no puede cancelar el pedido, pero si puede rechazarlo.
    - No se califica ni se reporta a los proveedores
@@ -165,11 +166,16 @@ Creado el 23 de noviembre del 2019
 
 
    ### Documentación del usuario
-
+   
+   Tomando en cuenta que nuestro software es una aplicación para celulares, tenemos la seguridad de que no es necesario poder dar una guía de uso sin embargo, la ayuda la pueden buscar en las páginas oficiales de la empresa junto con los teléfonos marcados en la aplicación.
 
 
 
    ## Requerimientos de interfaz externa
+
+   Nuestra interfaz gráfica es muy sencilla y consta de 4 menús diferentes por el momento.
+
+   ![alt text](https://drive.google.com/drive/u/0/folders/15uPoKeDtkzWKBd1Qpej8cyF26rZLOWLD.jpg)
 
 
    ### Interfaces del usuario
