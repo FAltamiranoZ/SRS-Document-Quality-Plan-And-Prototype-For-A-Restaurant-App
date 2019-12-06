@@ -174,8 +174,9 @@ Creado el 23 de noviembre del 2019
    ## Requerimientos de interfaz externa
 
    Nuestra interfaz gráfica es muy sencilla y consta de 4 menús diferentes por el momento.
-
-   ![alt text](fotos/01.jpg =100x20 )
+   
+   <img src="fotos/01.jpg" alt="drawing" width="200"/>
+   
 
 
    ### Interfaces del usuario
