@@ -72,7 +72,11 @@ class _DetailPageState extends State<DetailPage> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
+<<<<<<< HEAD
                           "Swiss cheese, VCH original spread and\npickles. No modifications",
+=======
+                          "20 Alitas de barbecue, con papas fritas y salsa blue cheese",
+>>>>>>> develop
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
@@ -89,7 +93,11 @@ class _DetailPageState extends State<DetailPage> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
+<<<<<<< HEAD
                         "Bread Choises",
+=======
+                        "Bebida",
+>>>>>>> develop
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
@@ -104,7 +112,11 @@ class _DetailPageState extends State<DetailPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
+<<<<<<< HEAD
                           "Whole wheat ( Sliced )",
+=======
+                          "Coca Cola 500ml",
+>>>>>>> develop
                           style: TextStyle(
                             fontSize: 17,
                             color: _radioValue == 0 ? Colors.black: Colors.grey
@@ -115,7 +127,11 @@ class _DetailPageState extends State<DetailPage> {
                             value: 0,
                             groupValue: _radioValue,
                             onChanged: _handleChoiseChanged,
+<<<<<<< HEAD
                             activeColor: Color(0xffFF4500),
+=======
+                            activeColor: Color(0xFF7CB342),
+>>>>>>> develop
                         )
                       ],
 
@@ -125,7 +141,11 @@ class _DetailPageState extends State<DetailPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
+<<<<<<< HEAD
                             "3rd Slice / Double Decker",
+=======
+                            "Fanta  500ml",
+>>>>>>> develop
                             style: TextStyle(
                                 fontSize: 17,
                                 color: _radioValue == 1 ? Colors.black: Colors.grey
@@ -136,7 +156,11 @@ class _DetailPageState extends State<DetailPage> {
                           value: 1,
                           groupValue: _radioValue,
                           onChanged: _handleChoiseChanged,
+<<<<<<< HEAD
                           activeColor: Color(0xffFF4500),
+=======
+                          activeColor: Color(0xFF7CB342),
+>>>>>>> develop
                         )
                       ],
 
@@ -146,7 +170,11 @@ class _DetailPageState extends State<DetailPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
+<<<<<<< HEAD
                             "Dutch Crunch Roll",
+=======
+                            "Boing de mango  500ml",
+>>>>>>> develop
                             style: TextStyle(
                                 fontSize: 17,
                                 color: _radioValue == 2 ? Colors.black: Colors.grey
@@ -157,7 +185,11 @@ class _DetailPageState extends State<DetailPage> {
                           value: 2,
                           groupValue: _radioValue,
                           onChanged: _handleChoiseChanged,
+<<<<<<< HEAD
                           activeColor: Color(0xffFF4500),
+=======
+                          activeColor: Color(0xFF7CB342),
+>>>>>>> develop
                         )
                       ],
 
@@ -166,11 +198,43 @@ class _DetailPageState extends State<DetailPage> {
                     SizedBox(height: 40,),
 
                     RaisedButton(
+<<<<<<< HEAD
                       onPressed: (){},
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
                       ),
                       color: Color(0xffFF4500),
+=======
+                      onPressed: (){
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context){
+                            return AlertDialog(
+                              title: new Text("Hacer pedido"),
+                              content: new Text("La comida llegara a la ubicación configurada al registro"),
+                              actions: <Widget>[
+                                new FlatButton(
+                                  child: new Text("Cerrar"),
+                                  onPressed: (){
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                                new FlatButton(
+                                  child: new Text("Aceptar"),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                ),
+                              ],
+                            );
+                          }
+                        );
+                      },
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)
+                      ),
+                      color: Color(0xFF7CB342),
+>>>>>>> develop
                       child: Container(
                         height: 70,
                         width: double.infinity,
@@ -180,7 +244,11 @@ class _DetailPageState extends State<DetailPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
+<<<<<<< HEAD
                                 "Add to Order",
+=======
+                                "Hacer pedido",
+>>>>>>> develop
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
@@ -190,7 +258,11 @@ class _DetailPageState extends State<DetailPage> {
                               ),
 
                               Text(
+<<<<<<< HEAD
                                 "\$ 15.90",
+=======
+                                "\$ 150.90",
+>>>>>>> develop
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 18,
@@ -248,9 +320,15 @@ class _DetailPageState extends State<DetailPage> {
 
           Positioned(
             top: 150,
+<<<<<<< HEAD
             left: 30,
             child: Text(
               "Old\nFashioned.",
+=======
+            left: 75,
+            child: Text(
+              "Tu platillo.",
+>>>>>>> develop
               style: TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
@@ -264,7 +342,10 @@ class _DetailPageState extends State<DetailPage> {
       ),
     );
   }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> develop
 }

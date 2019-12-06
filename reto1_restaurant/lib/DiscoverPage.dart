@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+<<<<<<< HEAD
+=======
+import 'package:reto1_restaurant/RandomPage.dart';
+>>>>>>> develop
 
 class DiscoveryPage extends StatefulWidget {
   static const String routeName = "DiscoverPage";
@@ -12,13 +16,20 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
 
 
   List imageRoutes = [
+<<<<<<< HEAD
     'assets/images/food1.jpg',
     'assets/images/food2.jpeg',
     'assets/images/food3.jpg',
+=======
+    'assets/images/tacosfood.jpg',
+    'assets/images/food2.jpeg',
+    'assets/images/pizzafood.jpg',
+>>>>>>> develop
     'assets/images/food4.jpeg'
   ];
 
   List imageRoutesPrice = [
+<<<<<<< HEAD
     '\$5.99',
     '\$13.50',
     '\$9.00',
@@ -30,6 +41,19 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
     'Delicious.',
     'Exquisite.',
     'Luscious.'
+=======
+    '\$50.99',
+    '\$130.50',
+    '\$90.00',
+    '\$140.30'
+  ];
+
+  List imageDescription = [
+    'Don Manolito',
+    'Toldo Rojo',
+    'Pizzas Perro Negro',
+    'Hotters'
+>>>>>>> develop
   ];
 
   int selectedItem = 0;
@@ -43,12 +67,21 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   ];
 
   List imageIconsDescription = [
+<<<<<<< HEAD
     'Turkish',
     'Japanese',
     'Mexican',
     'American',
     'Italian',
     'Chinese'
+=======
+    'Turquesa',
+    'Japonesa',
+    'Mexicana',
+    'Americana',
+    'Italiana',
+    'China'
+>>>>>>> develop
   ];
 
   @override
@@ -61,9 +94,44 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
 
           title: Padding(
             padding: const EdgeInsets.all(10.0),
+<<<<<<< HEAD
             child: Image(
               image: AssetImage(
                   'assets/images/heyo_logo.png'
+=======
+            child: FlatButton(
+              onPressed: (){
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context){
+                    return AlertDialog(
+                      title: new Text("Pedido de la semana."),
+                      content: new Text("Cortes de carne mixto con guacamole y frijoles."),
+                      actions: <Widget>[
+                        new FlatButton(
+                          child: new Text("Rechazar"),
+                          onPressed: (){
+
+                            Navigator.of(context).pop();
+                          },
+                        ),
+                        new FlatButton(
+                          child: new Text("Pedir"),
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => RandomPage() ));
+                            
+                          },
+                        ),
+                      ],
+                    );
+                  }
+                );
+              },
+              child: Image(
+                image: AssetImage(
+                    'assets/images/YF.png'
+                ),
+>>>>>>> develop
               ),
             ),
           ),
@@ -71,7 +139,11 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
             FlatButton.icon(
                 onPressed: (){},
                 icon: Icon(Icons.explore),
+<<<<<<< HEAD
                 label: Text("Ecuador")
+=======
+                label: Text("CDXM, ITAM")
+>>>>>>> develop
             )
           ],
         ),
@@ -104,11 +176,18 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                                 )
                             ),
                           ),
+<<<<<<< HEAD
                           new Align(
                             alignment: Alignment.center,
                             child: Text(
                               imageDescription[index],
 
+=======
+                          new Center(
+                            child: Text(
+                              imageDescription[index],
+                              textAlign: TextAlign.center,
+>>>>>>> develop
                               style: TextStyle(
                                   fontSize: 50,
                                   color: Colors.white,
@@ -132,7 +211,11 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 30),
                     child: Text(
+<<<<<<< HEAD
                       "Categories",
+=======
+                      "Categorias",
+>>>>>>> develop
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -168,7 +251,11 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                               child: Material(
                                 child: Ink(
                                   decoration: BoxDecoration(
+<<<<<<< HEAD
                                       border: Border.all(color: selectedItem==index ? Color(0xffFFDACC):Colors.grey[500], width: 3),
+=======
+                                      border: Border.all(color: selectedItem==index ? Color(0xffFF33691E):Colors.grey[500], width: 3),
+>>>>>>> develop
                                       shape: BoxShape.circle
                                   ),
                                   child: InkWell(
@@ -188,7 +275,11 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                             imageIconsDescription[index],
                             style: TextStyle(
                                 fontSize: 15,
+<<<<<<< HEAD
                                 color: selectedItem==index ? Color(0XFFFF7A48):Colors.grey[500]
+=======
+                                color: selectedItem==index ? Color(0xffFF33691E):Colors.grey[500]
+>>>>>>> develop
                             ),
                           ),
                         ],
@@ -207,7 +298,11 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
+<<<<<<< HEAD
                       "396 Restaurants",
+=======
+                      "87 Restaurantes cerca",
+>>>>>>> develop
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18
@@ -216,12 +311,21 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
 
                     FlatButton.icon(
                         onPressed: (){},
+<<<<<<< HEAD
                         icon: Icon(Icons.filter_list, color: Color(0XFFFF4C0F)),
                         label: Text(
                           "Filter",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Color(0XFFFF4C0F),
+=======
+                        icon: Icon(Icons.filter_list, color: Color(0xffFF33691E)),
+                        label: Text(
+                          "Filtrar",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xffFF33691E),
+>>>>>>> develop
                               fontSize: 18
                           ),
                         )

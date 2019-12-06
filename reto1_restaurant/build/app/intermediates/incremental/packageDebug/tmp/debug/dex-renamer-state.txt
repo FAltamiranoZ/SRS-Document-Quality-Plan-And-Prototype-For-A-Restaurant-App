@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Mon Dec 02 20:22:27 CST 2019
 base.0=/Users/gerardo/Desktop/reto1_restaurant/build/app/intermediates/transforms/dexMerger/debug/0
+=======
+#Thu Dec 05 20:21:01 CST 2019
+base.0=/Users/gerardo/Documents/Escuela/ING_SOFTWARE/QueremosDulces-ProyectoFinal/reto1_restaurant/build/app/intermediates/transforms/dexMerger/debug/0
+>>>>>>> develop
 path.0=classes.dex
 renamed.0=classes.dex

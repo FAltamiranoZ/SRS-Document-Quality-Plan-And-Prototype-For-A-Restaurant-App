@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:reto1_restaurant/DiscoverPage.dart';
+=======
+import 'package:flutter/material.dart' as prefix0;
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import 'package:reto1_restaurant/ContraPage.dart';
+import 'package:reto1_restaurant/DiscoverPage.dart';
+import 'package:reto1_restaurant/Login.dart';
+import 'package:reto1_restaurant/SignUpPage.dart';
+>>>>>>> develop
 
 class myHome extends StatefulWidget {
   static const String routeName = 'HomePage';
@@ -95,7 +104,12 @@ class _myHomeState extends State<myHome> {
                         children: <Widget>[
                           GestureDetector(
                             onTap: (){
+<<<<<<< HEAD
                               print("boton 1");
+=======
+                              prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+
+>>>>>>> develop
                             },
                             child: Container(
                               height: 60,
@@ -121,7 +135,12 @@ class _myHomeState extends State<myHome> {
 
                           GestureDetector(
                             onTap: (){
+<<<<<<< HEAD
                               Navigator.of(context).pushReplacementNamed('DiscoverPage');
+=======
+                              prefix0.Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                              // Navigator.of(context).pushReplacementNamed('DiscoverPage');
+>>>>>>> develop
                             },
                             child: Container(
                               height: 60,
@@ -149,6 +168,7 @@ class _myHomeState extends State<myHome> {
                       ),
 
                       SizedBox(height: 25,),
+<<<<<<< HEAD
 
                       RichText(
                         textAlign: TextAlign.center,
@@ -169,6 +189,13 @@ class _myHomeState extends State<myHome> {
                               ),
                             ]
                         ),
+=======
+                      FlatButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ContraPage() ));
+                        },
+                        child: new Text("Olvide mi contraseña"),
+>>>>>>> develop
                       )
                     ],
                   ),

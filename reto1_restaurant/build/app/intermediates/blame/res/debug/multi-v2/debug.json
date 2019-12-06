@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/gerardo/Desktop/reto1_restaurant/build/app/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
                     "source": "/Users/gerardo/Desktop/reto1_restaurant/android/app/src/main/res/values/styles.xml",
+=======
+            "outputFile": "/Users/gerardo/Documents/Escuela/ING_SOFTWARE/QueremosDulces-ProyectoFinal/reto1_restaurant/build/app/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/gerardo/Documents/Escuela/ING_SOFTWARE/QueremosDulces-ProyectoFinal/reto1_restaurant/android/app/src/main/res/values/styles.xml",
+>>>>>>> develop
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
