@@ -175,7 +175,7 @@ Creado el 23 de noviembre del 2019
 
    Nuestra interfaz gráfica es muy sencilla y consta de 4 menús diferentes por el momento.
 
-   ![alt text](fotos/01.jpg)
+   ![alt text](fotos/01.jpg =100x20 )
 
 
    ### Interfaces del usuario
