@@ -175,7 +175,7 @@ Creado el 23 de noviembre del 2019
 
    Nuestra interfaz gráfica es muy sencilla y consta de 4 menús diferentes por el momento.
 
-   ![alt text](https://drive.google.com/drive/u/0/folders/15uPoKeDtkzWKBd1Qpej8cyF26rZLOWLD.jpg)
+   ![alt text](fotos/01.jpg)
 
 
    ### Interfaces del usuario
