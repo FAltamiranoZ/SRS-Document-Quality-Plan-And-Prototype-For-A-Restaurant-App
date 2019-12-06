@@ -46,14 +46,13 @@ Creado el 23 de noviembre del 2019
    1. Problemas o Riesgos del Software
    1. Funcionalidades a probar
    1. Funcionalidades que no serán probadas
-   1. Criterios para aprovar o reprobar un elemento
+   1. Criterios para aprobar o reprobar un elemento
    1. Criterios de suspensión y continuación de los requisitos
    1. Pruebas de requisitos pendientes
    1. Necesidades especiales para el proyecto
    1. Entrenamiento y necesidades del staff
    1. Planeación de Riesgos y eventualidades
    1. Estatus de aprobación
-   1. Glosario
 3. Arquitectura y justificación
 4. Metodología y justificación
 5. Código del proyecto
@@ -551,9 +550,13 @@ Se debe hacer una capacitación a los repartidores, la cual correra por parte de
 
 ## Planeación de Riesgos y eventualidades
 
+Dada la pequeña escala del proyecto y el grupo de trabajo, el manejo de eventualidades correrá directamente por parte del equipo de YourFood, lo cuál se manejará a la brevedad.
+
+Dado que es un proyecto diseñado por y para ITAMitas, los horarios de servicio estarán limitados a los horarios de clase, dígase lunes a viernes de 07:00 a 22:00 horas. Esos mismos serán los horarios de atención de eventualidades.
+
 ## Estatus de aprobación
 
-## Glosario
+En este momento, el proyecto se considera aprobado para su distribución en estado Alfa.
 
 # Arquitectura y justificación
 
