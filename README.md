@@ -173,6 +173,8 @@ Creado el 23 de noviembre del 2019
 
    ## Requerimientos de interfaz externa
 
+   ### Interfaces del usuario
+
    Nuestra interfaz gráfica es muy sencilla y consta de 4 menús diferentes por el momento.
    Primero que menú de inicio en el cuál el usuario debera de elegir la opción deseada.
    <img src="fotos/01.jpg" alt="drawing" width="200"/>
@@ -183,33 +185,26 @@ Creado el 23 de noviembre del 2019
    <img src="fotos/03.jpg" alt="drawing" width="200"/>
    <img src="fotos/04.jpg" alt="drawing" width="200"/>
 
-   Menú princial de todos los platillos con los cuales contamos. 
+   Menú princial de todos los platillos con los cuales contamos y conforme se vayan agregando más el usuario lo podra ver sin problemas. 
+
    <img src="fotos/05.jpg" alt="drawing" width="200"/>
 
    La página de cada producto independiente para conocer con que otros productos lo podemos acompañar.
 
    <img src="fotos/06.jpg" alt="drawing" width="200"/>
 
-   Por último, la ventana de confirmación de pedido.
+   Por último, la ventana de confirmación de pedido en la cual nos indica el tiempo estimado del pedido junto con la confirmación.
 
-   <img src="fotos/07.jpg" alt="drawing" width="200"/
-
+   <img src="fotos/07.jpg" alt="drawing" width="200"/>
    
-
-
-   ### Interfaces del usuario
-
-
 
    ### Interfaces del hardware
 
-
-
-   ### Interfaces del software
-
-
+   Dado que necesitamos personas que hagan pedidos y personas que hagan los pedidos es necesario tener una comunicación entre estas dos partes de nuestra empresa. Por lo cual es necesario realizar dos aplicaciones (disponibles para andoroid y iOS) las cuales estaran conectadas por la plataforma Firebase, ya que es de gran facilidad y utilidad.
 
    ### Interfaces de comunicación
+
+   Firebase es una poderosa herramienta desarrollada por Google, la cual puede dar la facilidad de compilar las aplicaciones, estudiar el uso de tu aplicación e incluso mejorar la calidad de la misma. Sin embargo, nos aporta también la comunicación entre aplicaciones de una manera fácil y rápida ya que tiene sus propias librerías para Flutter (software ocupado para desarrollar la aplicación)
 
 
 
@@ -222,20 +217,17 @@ Creado el 23 de noviembre del 2019
    - El usuario es incapaz de recordar su contraseña, y necesitará recuperarla, utilizando su usuario o su correo electrónico.
 
    **Secuencia de respuesta**
-   - El usuario introduce un nombre de usuario o correo electrónico no registrado en la base de datos --> Se mostrará un pop up que diga: “No hay ninguna cuenta con este nombre de usuario / correo ¿deseas crear una nueva cuenta?” y tenga en la parte de debajo un botón que redirija a la pantalla de creación de cuenta, que diga “Crear cuenta”.
-   - El nombre de usuario o correo electrónico existe --> Se mostrará un pop up que diga “Revisa tu correo electrónico e introduce el código que se te mandó. Se paciente, el correo puede tardar algunos minutos en llegar” y en la parte de debajo habrá un espacio para introducir el código enviado por correo.
-      - Si el código introducido es incorrecto --> Se muestra un mensaje que diga “Código incorrecto, vuelve a intentar”.
-      -Si el código introducido es correcto --> Se redirige al usuario a la pantalla de creación de nueva contraseña.
+   - El usuario debera de ingresar a la aplicación y en la primera pantalla dar clic en " Olvidé mi contraseña" ya una vez dentro de la nueva ventana tendrá que escribir su correo electrónico y última contraseña recordada ( por seguridad). Al realizar estos pasos la aplicación le dara un mensaje de " Le hemos enviado un email a su correo electrónico" , en ese momento el usuario debera de ingresas a su cuenta y seguir los pasos (solo es abrir una página y cambiar la contraseña). Importante que este cambio se realizara en el mismo momento y si el correo no esta registrado no enviará nada. 
 
    **Requerimientos - funcionalidades**
    
-   Req-1: Pantalla de recuperación de contraseña. Habrá 1 Text Box a rellenar, con su correspondiente etiqueta de nombre de usuario o correo electrónico.
+   Req-1: Pantalla de recuperación de contraseña. Habrá 1 Text Box a rellenar, con su correspondiente etiqueta de correo electrónico. 
    
-   Req-2: Pop up de nombre de usuario o de correo electrónico inexistente.
+   Req-2: Habrá otro Text Box a rellenar, pero con su última contraseña recordada por motivos de seguridad
    
-   Req-3: Pop up para introducción de código.
+   Req-3: Pop up para invitarlo a que verifique su correo electrónico.
 
-   Req-4: Mensaje de código incorrecto.
+   Req-4: Dar clic que viene en el correo electrónico y cambiar la contraseña.
 
 
    ### Creación de nueva contraseña
@@ -266,16 +258,16 @@ Creado el 23 de noviembre del 2019
    **Descripción y prioridad**
 
    - Prioridad Charizard.
-   - El usuario desea ingresar con su nombre de usuario o correo electrónico y contraseña a la aplicación para poder hacer uso de esta.
+   - El usuario desea ingresar con su correo electrónico y contraseña a la aplicación para poder hacer uso de esta.
 
    **Secuencia de respuesta**
-   - Se hace clic en el botón de confirmar y el nombre de usuario o correo electrónico no esta registrado en la base de datos --> Se mostrará un pop up que diga: “No hay ninguna cuenta con este nombre de usuario / correo ¿deseas crear una nueva cuenta?” y tenga en la parte de debajo un botón que redirija a la pantalla de creación de cuenta, que diga “Crear cuenta”.
-   - Se hace clic en el botón de confirmar y el nombre de usuario o correo electrónico existe, pero la contraseña es incorrecta --> Se mostrará un pop up que diga: “La contraseña es incorrecta” y en la parte de debajo un botón que redirija a la pantalla de recuperación de contraseña, que diga “Olvidé mi contraseña”.
-      - Se hace clic en el botón de confirmar y el nombre de usuario o correo electrónico existe y la contraseña es correcta --> Se redirigirá al usuario a la pantalla principal correspondiente a su tipo de usuario.
+   - Se hace clic en el botón de confirmar y si el correo electrónico no esta registrado en la base de datos --> Se mostrará un pop up que diga: “No hay ninguna cuenta con este nombre de usuario".
+   - Se hace clic en el botón de confirmar y si el correo electrónico existe, pero la contraseña es incorrecta --> Se mostrará un pop up que diga: “La contraseña es incorrecta”.
+   - Se hace clic en el botón de confirmar y si correo electrónico existe y la contraseña es correcta --> Se redirigirá al usuario a la pantalla principal correspondiente a su tipo de usuario.
 
    **Requerimientos - funcionalidades**
    
-   Req-1: Pantalla de inicio de sesión. Habrá 2 Text Box a rellenar, con sus correspondientes etiquetas de nombre de usuario o correo electrónico, y contraseña. Al final de la pantalla habrá un botón que diga “confirmar”.
+   Req-1: Pantalla de inicio de sesión. Habrá 2 Text Box a rellenar, con sus correspondientes etiquetas de correo electrónico, y contraseña. Al final de la pantalla habrá un botón que diga “confirmar” o "regresar".
    
    Req-2: Pop up de nombre de usuario o de correo electrónico inexistente.
    
@@ -289,9 +281,9 @@ Creado el 23 de noviembre del 2019
    - El usuario desea crear una cuenta para poder acceder a los servicios de la aplicación.
 
    **Secuencia de respuesta**
-   - Se hace clic en el botón de crear y los campos no están rellenados de manera correcta --> Se mostrará un mensaje que especifique cuál es el error y en que parte se encuentra de la siguiente manera: “Hay un error en el campo x debido a y”
+   - Se hace clic en el botón de crear y los campos no están rellenados de manera correcta --> Se mostrarán en color rojos aquellos campos que faltaron.
    - Se hace clic en el botón de crear y los campos son rellenados de manera correcta y el usuario no existe en la base de datos --> Se registra en la base de datos como un nuevo usuario, se despliega un mensaje que diga “Se ha creado tu usuario de manera correcta” y se le manda un correo de confirmación al correo introducido por el usuario en el campo correspondiente.
-   - Se hace clic en el botón de crear y el usuario existe en la base de datos --> Se mostrará un pop up que diga "Este usuario ya está registrado" y redirigirá al usuario a la pantalla de inicio de sesión.
+   - Se hace clic en el botón de crear y el usuario existe en la base de datos --> Se mostrará un pop up que diga "Este usuario ya está registrado".
 
    **Requerimientos - funcionalidades**
    
@@ -500,23 +492,20 @@ Creado el 23 de noviembre del 2019
 
    ## Otros requerimientos
 
+   Será necesario tener una segurídad tando del lado del cliente que pide por la privacidad de sus datos pero también de las personas que repartirán la comida para evitar problemas de mal comportamiento, entonces se les tendrá que pedir algunos documentos como :
+   -Ine
+   -Comprobante de domicilio
+   -Carta de no arrestos 
+   -Cuenta bancaria
 
    ### Requerimientos de desempeño
 
 
 
    ### Requerimientos de seguridad
+   Como ya se menciona deberemos de contar con una plataforma que pueda velar por la privacidad de nuestros clientes y nosotros como empresa buscar contratar a las mejores personas para que puedan repartir comida.
 
-
-
-   ### Atributos de calidad de software
-
-
-
-   ### Reglas de negocio
-
-
-
+   
 # Plan de Calidad
 
 ## Identificador del Plan de Calidad
@@ -606,6 +595,8 @@ Con esto, quedan las metodologías de extreme y espiral; debido a que no nos enc
 
 
 # Código del proyecto
+
+El código ya se encuentra en el mismo repositorio de GitHub.
 
 
 # Documentación para replicar
