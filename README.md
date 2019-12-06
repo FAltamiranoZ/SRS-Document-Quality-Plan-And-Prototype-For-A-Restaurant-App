@@ -174,8 +174,26 @@ Creado el 23 de noviembre del 2019
    ## Requerimientos de interfaz externa
 
    Nuestra interfaz gráfica es muy sencilla y consta de 4 menús diferentes por el momento.
-   
+   Primero que menú de inicio en el cuál el usuario debera de elegir la opción deseada.
    <img src="fotos/01.jpg" alt="drawing" width="200"/>
+
+   Las siguientes ventanas son del mismo tipo pero con objetivos diferentes. La primera es para que un usuario se de de alta, la siguiente es cuando se le olvido la contraseña y la última para iniciar sesión.
+
+   <img src="fotos/02.jpg" alt="drawing" width="200"/>
+   <img src="fotos/03.jpg" alt="drawing" width="200"/>
+   <img src="fotos/04.jpg" alt="drawing" width="200"/>
+
+   Menú princial de todos los platillos con los cuales contamos. 
+   <img src="fotos/05.jpg" alt="drawing" width="200"/>
+
+   La página de cada producto independiente para conocer con que otros productos lo podemos acompañar.
+
+   <img src="fotos/06.jpg" alt="drawing" width="200"/>
+
+   Por último, la ventana de confirmación de pedido.
+
+   <img src="fotos/07.jpg" alt="drawing" width="200"/
+
    
 
 
