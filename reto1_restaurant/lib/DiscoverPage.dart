@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:reto1_restaurant/RandomPage.dart';
 
 class DiscoveryPage extends StatefulWidget {
   static const String routeName = "DiscoverPage";
@@ -19,10 +20,10 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
   ];
 
   List imageRoutesPrice = [
-    '\$5.99',
-    '\$13.50',
-    '\$9.00',
-    '\$14.30'
+    '\$50.99',
+    '\$130.50',
+    '\$90.00',
+    '\$140.30'
   ];
 
   List imageDescription = [
@@ -61,9 +62,38 @@ class _DiscoveryPageState extends State<DiscoveryPage> {
 
           title: Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Image(
-              image: AssetImage(
-                  'assets/images/YF.png'
+            child: FlatButton(
+              onPressed: (){
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context){
+                    return AlertDialog(
+                      title: new Text("Pedido de la semana."),
+                      content: new Text("Cortes de carne mixto con guacamole y frijoles."),
+                      actions: <Widget>[
+                        new FlatButton(
+                          child: new Text("Rechazar"),
+                          onPressed: (){
+
+                            Navigator.of(context).pop();
+                          },
+                        ),
+                        new FlatButton(
+                          child: new Text("Pedir"),
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => RandomPage() ));
+                            
+                          },
+                        ),
+                      ],
+                    );
+                  }
+                );
+              },
+              child: Image(
+                image: AssetImage(
+                    'assets/images/YF.png'
+                ),
               ),
             ),
           ),
